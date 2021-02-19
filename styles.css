@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+
+body.dark {
+    color: white;
+    background: black;
+}
+
+body.dark * {
+    border-color: white;
+}
+
+#evidence {
+    margin-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 0px 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.evidence-name {
+    width: 50%;
+}
+
+.yes, .no {
+    width: 25%;
+    cursor: pointer;
+}
+
+.yes.active {
+    color: black;
+    background: lightgreen;
+}
+
+.yes.active::after {
+    content: " ✓";
+    color: green;
+}
+
+.no.active {
+    color: black;
+    background: pink;
+}
+
+.no.active::after {
+    content: " ✗";
+    color: red;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 0 50%;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 10pt;
+}
+
+.hidden {
+    display: none;
+}
+
+.card h2,
+.card h3,
+.card p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card *+h2,
+.card *+h3 {
+    margin-top: 10px;
+}
+
+.card .evidence .active {
+    text-decoration: line-through;
+    color: lightgrey;
+}
+
+body.dark .card .evidence .active {
+    color: grey;
+}
