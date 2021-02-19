@@ -27,14 +27,41 @@ table {
 }
 
 td {
-    border: 1px solid grey;
+    border: 1px solid black;
     padding: 0px 10px;
     height: 50px;
     line-height: 50px;
 }
 
+.always .evidence-name {
+    background: lightgreen;
+    color: black;
+}
+
+.always .chance {
+    color: green !important;
+}
+
+.never .evidence-name {
+    background: pink;
+    color: black;
+}
+
+.never .chance {
+    color: red !important;
+}
+
 .evidence-name {
     width: 50%;
+}
+
+.chance {
+    font-size: 10pt;
+    color: blue;
+}
+
+body.dark .chance {
+    color:skyblue;
 }
 
 .yes, .no {

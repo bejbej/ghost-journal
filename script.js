@@ -1,8 +1,10 @@
 const ghostList = document.querySelector(".cards");
-const evidenceList = document.getElementById("#evidence");
+const evidenceElements = [...document.querySelectorAll("tr")];
 const active = "active";
 const hidden = "hidden";
 const dark = "dark";
+const always = "always";
+const never = "never";
 const yesButtons = [...document.getElementsByClassName("yes")];
 const noButtons = [...document.getElementsByClassName("no")];
 const allButtons = yesButtons.concat(noButtons);
@@ -12,6 +14,7 @@ if (window.location.search == "?dark") {
 }
 
 allButtons.forEach(element => element.addEventListener("click", onClick));
+update();
 
 function onClick(event) {
     document.body.classList.add(hidden);
@@ -61,4 +64,25 @@ function update() {
             }
         };
     });
+
+    evidenceElements.forEach(element => {
+        element.classList.remove(always);
+        element.classList.remove(never);
+        element.querySelector(".chance").innerText = "0%";
+    });
+
+    if (ghosts.length > 0) {
+        evidenceElements.forEach(element => {
+            const evidenceClass = element.id;
+            const possible = [...ghostList.querySelectorAll(".card:not(.hidden) ." + evidenceClass)].length;
+            const chance = Math.round(100 * (possible / ghosts.length));
+            if (chance === 0) {
+                element.classList.add(never);
+            }
+            else if (chance === 100) {
+                element.classList.add(always);
+            }
+            element.querySelector(".chance").innerText = chance + "%";
+        });
+    }
 }
