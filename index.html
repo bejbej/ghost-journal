@@ -7,6 +7,11 @@
 <body>
     <div style="display: none;">✓✗</div>
     <table id=evidence>
+        <tr id=dots-projector>
+            <td class=evidence-name>DOTS Projector <span class="chance"></span></td>
+            <td class=yes>Yes</td>
+            <td class=no>No</td>
+        </tr>
         <tr id=emf5>
             <td class=evidence-name>EMF5 <span class="chance"></span></td>
             <td class=yes>Yes</td>
@@ -41,35 +46,49 @@
     <div class=cards>
         <div class=card>
             <h2>Banshee</h2>
-            <p>A Banshee is a natural hunter and will attack anything. It has been known to stalk its prey one at a time until making it’s kill.</p>
+            <p>A banshee is a natural hunter and will attack anything. It has been known to stalk its prey one at a time until making its kill.</p>
             <h3>Strength</h3>
-            <p>A Banshee will only target one person at a time.</p>
+            <p>A banshee will only target one person at a time.</p>
             <h3>Weakness</h3>
             <p>Banshees fear the Crucifix and will be less aggressive when near one.</p>
             <h3>Evidence</h3>
             <p class=evidence>
-                <span class=emf5>EMF5,</span>
+                <span class=dots-projector>DOTS Projector,</span>
                 <span class=fingerprints>Fingerprints,</span>
-                <span class=freezing-temps>Freezing Temps</span>
+                <span class=ghost-orb>Ghost Orb</span>
             </p>
         </div>
         <div class=card>
             <h2>Demon</h2>
-            <p>A Demon is one of the worst Ghosts you can encounter. It has been known to attack without a reason.</p>
+            <p>A demon is one of the worst ghosts you can encounter. It has been known to attack without a reason.</p>
             <h3>Strength</h3>
-            <p>Demons will attack more often than any other Ghost.</p>
+            <p>Demons will attack more often than any other ghost.</p>
             <h3>Weakness</h3>
             <p>Asking a Demon successful questions on the Ouija Board won’t lower the user's sanity.</p>
             <h3>Evidence</h3>
             <p class=evidence>
-                <span class=ghost-writing>Ghost Writing,</span>
-                <span class=spirit-box>Spirit Box,</span>
-                <span class=freezing-temps>Freezing Temps</span>
+                <span class=fingerprints>Fingerprints,</span>
+                <span class=freezing-temps>Freezing Temps,</span>
+                <span class=ghost-writing>Ghost Writing</span>
+            </p>
+        </div>
+        <div class=card>
+            <h2>Goryo</h2>
+            <p>Using video cameras is the only way to view a goryo when it passes through a DOTS projector.</p>
+            <h3>Strength</h3>
+            <p>A goryo will usually only show itself on camera if there are no people nearby.</p>
+            <h3>Weakness</h3>
+            <p>They are rarely seen far from their place of death.</p>
+            <h3>Evidence</h3>
+            <p class=evidence>
+                <span class=dots-projector>DOTS Projector,</span>
+                <span class=emf5>EMF5,</span>
+                <span class=fingerprints>Fingerprints</span>
             </p>
         </div>
         <div class=card>
             <h2>Hantu</h2>
-            <p>A rare ghost that can be found in hot climates. They are known to attack more often in cold weather.</p>
+            <p>A Hantu is a rare rare ghost that can be found in hot climates. They are known to attack more often in cold weather.</p>
             <h3>Strength</h3>
             <p>Lower temperatures can cause the Hantu to move at faster speeds.</p>
             <h3>Weakness</h3>
@@ -77,162 +96,176 @@
             <h3>Evidence</h3>
             <p class=evidence>
                 <span class=fingerprints>Fingerprints,</span>
-                <span class=ghost-writing>Ghost Writing,</span>
-                <span class=ghost-orb>Ghost Orb</span>
-            </p>
-        </div>
-        <div class=card>
-            <h2>Jinn</h2>
-            <p>A Jinn is a territorial Ghost that will attack when threatened. It has also been known to be able to travel at significant speed.</p>
-            <h3>Strength</h3>
-            <p>A Jinn will travel at a faster speed if its victim is far away.</p>
-            <h3>Weakness</h3>
-            <p>Turning off the location's power source will prevent the Jinn from using its ability.</p>
-            <h3>Evidence</h3>
-            <p class=evidence>
-                <span class=emf5>EMF5,</span>
-                <span class=spirit-box>Spirit Box,</span>
-                <span class=ghost-orb>Ghost Orb</span>
-            </p>
-        </div>
-        <div class=card>
-            <h2>Mare</h2>
-            <p>A Mare is the source of all nightmares, making it most powerful in the darkness.</p>
-            <h3>Strength</h3>
-            <p>A Mare will have an increased chance to attack in the dark.</p>
-            <h3>Weakness</h3>
-            <p>Turning the lights On around the Mare will lower its chance to attack.</p>
-            <h3>Evidence</h3>
-            <p class=evidence>
-                <span class=spirit-box>Spirit Box,</span>
-                <span class=ghost-orb>Ghost Orb,</span>
-                <span class=freezing-temps>Freezing Temps</span>
-            </p>
-        </div>
-        <div class=card>
-            <h2>Oni</h2>
-            <p>Oni's are a cousin to the Demon and possess extreme strength. There have been rumors that they become more active around their prey.</p>
-            <h3>Strength</h3>
-            <p>Oni’s are more active when people are nearby and have been seen moving objects at great speed.</p>
-            <h3>Weakness</h3>
-            <p>Being more active will make the Oni easier to find and identify.</p>
-            <h3>Evidence</h3>
-            <p class=evidence>
-                <span class=emf5>EMF5,</span>
-                <span class=ghost-writing>Ghost Writing,</span>
-                <span class=spirit-box>Spirit Box</span>
-            </p>
-        </div>
-        <div class=card>
-            <h2>Phantom</h2>
-            <p>A phantom ghost can possess the living, and most commonly summoned through an Ouija Board. It also induces fear into those around it.</p>
-            <h3>Strength</h3>
-            <p>Looking at a Phantom will considerably drop your sanity.</p>
-            <h3>Weakness</h3>
-            <p>Taking a photo of the Phantom will make it temporarily disappear.</p>
-            <h3>Evidence</h3>
-            <p class=evidence>
-                <span class=emf5>EMF5,</span>
                 <span class=freezing-temps>Freezing Temps,</span>
                 <span class=ghost-orb>Ghost Orb</span>
             </p>
         </div>
         <div class=card>
-            <h2>Poltergeist</h2>
-            <p>One of the most famous Ghosts, a Poltergeist, also known as a noisy ghost that can manipulate objects around it to spread fear into its victims.</p>
+            <h2>Jinn</h2>
+            <p>A jinn is a territorial ghost that will attack when threatened. It has also been known to be able to travel at significant speed.</p>
             <h3>Strength</h3>
-            <p>A Poltergeist can throw huge amounts of objects at once.</p>
+            <p>A jinn will travel at a faster speed if its victim is far away.</p>
             <h3>Weakness</h3>
-            <p>A Poltergeist is almost ineffective in an empty room.</p>
+            <p>Turning off the location's power source will prevent the Jinn from using its ability.</p>
             <h3>Evidence</h3>
             <p class=evidence>
-                <span class=spirit-box>Spirit Box</span>
+                <span class=emf5>EMF5,</span>
                 <span class=fingerprints>Fingerprints,</span>
-                <span class=ghost-orb>Ghost Orb</span>
+                <span class=freezing-temps>Freezing Temps</span>
+            </p>
+        </div>
+        <div class=card>
+            <h2>Mare</h2>
+            <p>A mare is the source of all nightmares, making it most powerful in the darkness.</p>
+            <h3>Strength</h3>
+            <p>A mare will have an increased chance to attack in the dark.</p>
+            <h3>Weakness</h3>
+            <p>Turning the lights on around the Mare will lower its chance to attack.</p>
+            <h3>Evidence</h3>
+            <p class=evidence>
+                <span class=ghost-orb>Ghost Orb,</span>
+                <span class=ghost-writing>Ghost Writing,</span>
+                <span class=spirit-box>Spirit Box</span>
+            </p>
+        </div>
+        <div class=card>
+            <h2>Myling</h2>
+            <p>A myling is a very vocal and active ghost. They are rumored to be quiet when hunting their prey.</p>
+            <h3>Strength</h3>
+            <p>A myling is known to be quieter when hunting.</p>
+            <h3>Weakness</h3>
+            <p>Mylings more frequently make paranormal sounds.</p>
+            <h3>Evidence</h3>
+            <p class=evidence>
+                <span class=emf5>EMF5,</span>
+                <span class=fingerprints>Fingerprints,</span>
+                <span class=ghost-writing>Ghost Writing</span>
+            </p>
+        </div>
+        <div class=card>
+            <h2>Oni</h2>
+            <p>Oni are a cousin to the demon and possess extreme strength. There have been rumors that they become more active around their prey.</p>
+            <h3>Strength</h3>
+            <p>Oni are more active when people are nearby and have been seen moving objects at great speed.</p>
+            <h3>Weakness</h3>
+            <p>Being more active will make the oni easier to find and identify.</p>
+            <h3>Evidence</h3>
+            <p class=evidence>
+                <span class=dots-projector>DOTS Projector,</span>
+                <span class=emf5>EMF5,</span>
+                <span class=freezing-temps>Freezing Temps</span>
+            </p>
+        </div>
+        <div class=card>
+            <h2>Phantom</h2>
+            <p>A phantom is a ghost that can possess the living, most commonly summoned by an ouija board. It also induces fear into those around it.</p>
+            <h3>Strength</h3>
+            <p>Looking at a phantom will considerably drop your sanity.</p>
+            <h3>Weakness</h3>
+            <p>Taking a photo of the phantom will make it temporarily disappear.</p>
+            <h3>Evidence</h3>
+            <p class=evidence>
+                <span class=dots-projector>DOTS Projector,</span>
+                <span class=fingerprints>Fingerprints,</span>
+                <span class=spirit-box>Spirit Box</span>
+            </p>
+        </div>
+        <div class=card>
+            <h2>Poltergeist</h2>
+            <p>One of the most famous ghosts, a poltergeist, also known as a noisy ghost, can manipulate objects around it to spread fear into its victims.</p>
+            <h3>Strength</h3>
+            <p>A poltergeist can throw huge amounts of objects at once.</p>
+            <h3>Weakness</h3>
+            <p>A poltergeist is almost ineffective in an empty room.</p>
+            <h3>Evidence</h3>
+            <p class=evidence>
+                <span class=fingerprints>Fingerprints,</span>
+                <span class=ghost-writing>Ghost Writing,</span>
+                <span class=spirit-box>Spirit Box</span>
             </p>
         </div>
         <div class=card>
             <h2>Revenant</h2>
-            <p>They are slow but violent ghosts that will attack everyone indiscriminately. They also travel at a greater speed like the Jinn while hunting.</p>
+            <p>A revnant is a slow but violent ghosts that will attack everyone indiscriminately. It has been rumored to travel at a significantly high speed when hunting.</p>
             <h3>Strength</h3>
-            <p>A Revenant will travel at a significantly faster speed when hunting a victim.</p>
+            <p>A revenant will travel at a significantly faster speed when hunting a victim.</p>
             <h3>Weakness</h3>
-            <p>Hiding from the Revenant will cause it to move very slowly.</p>
+            <p>Hiding from the revenant will cause it to move very slowly.</p>
             <h3>Evidence</h3>
             <p class=evidence>
-                <span class=emf5>EMF5,</span>
-                <span class=ghost-writing>Ghost Writing,</span>
-                <span class=fingerprints>Fingerprints</span>
+                <span class=freezing-temps>Freezing Temps,</span>
+                <span class=ghost-orb>Ghost Orb,</span>
+                <span class=ghost-writing>Ghost Writing</span>
             </p>
         </div>
         <div class=card>
             <h2>Shade</h2>
-            <p>A Shade is known to be a Shy Ghost. There is evidence that a Shade will stop all paranormal activity if there are multiple people nearby.</p>
+            <p>A shade is known to be a shy ghost. There is evidence that a Shade will stop all paranormal activity if there are multiple people nearby.</p>
             <h3>Strength</h3>
-            <p>Being shy means the Ghost will be harder to find.</p>
+            <p>Being shy means the ghost will be harder to find.</p>
             <h3>Weakness</h3>
-            <p>The Ghost will not enter hunting mode if there are multiple people nearby.</p>
+            <p>The ghost will not enter hunting mode if there are multiple people nearby.</p>
             <h3>Evidence</h3>
             <p class=evidence>
                 <span class=emf5>EMF5,</span>
                 <span class=ghost-writing>Ghost Writing,</span>
-                <span class=ghost-orb>Ghost Orb</span>
+                <span class=freezing-temps>Freezing Temps</span>
             </p>
         </div>
         <div class=card>
             <h2>Spirit</h2>
-            <p>These are the most common ghosts you will come across but still they are powerful and dangerous. You can usually discover them at one of their hunting grounds after an unexplained death.</p>
+            <p>A spirit is the most common ghosts you will come across, however is is still very powerful and dangerous. They are usually discovered at one of their hunting grounds after an unexplained death.</p>
             <h3>Strength</h3>
-            <p>Nothing.</p>
+            <p>Nothing</p>
             <h3>Weakness</h3>
-            <p>Using smudge sticks on a phantom will stop it attacking for a long period of time.</p>
+            <p>Using smudge sticks on a spirit will stop it attacking for a long period of time.</p>
             <h3>Evidence</h3>
             <p class=evidence>
-                <span class=fingerprints>Fingerprints,</span>
+                <span class=emf5>EMF5,</span>
                 <span class=ghost-writing>Ghost Writing,</span>
                 <span class=spirit-box>Spirit Box</span>
             </p>
         </div>
         <div class=card>
             <h2>Wraith</h2>
-            <p>They are some of the most dangerous ghosts you will find. They are the only ghosts who can travel through walls and has the ability to fight.</p>
+            <p>A wraith is one of the most dangerous ghosts you will find. It is the only known ghosts that has the ability of flight and has sometimes been known to travel through walls.</p>
             <h3>Strength</h3>
             <p>Wraiths almost never touch the ground meaning it can’t be tracked by footsteps.</p>
             <h3>Weakness</h3>
             <p>Wraiths have a toxic reaction to salt.</p>
             <h3>Evidence</h3>
             <p class=evidence>
-                <span class=fingerprints>Fingerprints,</span>
-                <span class=freezing-temps>Freezing Temps,</span>
-                <span class=spirit-box>Spirit Box</span>
+                <span class=dots-projector>DOTS Projector,</span>
+                <span class=emf5>EMF5,</span>
+                <span class=fingerprints>Fingerprints</span>
             </p>
         </div>
         <div class=card>
             <h2>Yokai</h2>
-            <p>A common type of ghost that is attracted to human voices. They can usually be found haunting family homes.</p>
+            <p>A yokai is a common type of ghost that is attracted to human voices. They can usually be found haunting family homes.</p>
             <h3>Strength</h3>
-            <p>Talking near a Yokai will anger it and cause it to attack more often.</p>
+            <p>Talking near a yokai will anger it and cause it to attack more often.</p>
             <h3>Weakness</h3>
             <p>While hunting, it can only hear voices close to it</p>
             <h3>Evidence</h3>
             <p class=evidence>
-                <span class=spirit-box>Spirit Box,</span>
+                <span class=dots-projector>DOTS Projector,</span>
                 <span class=ghost-orb>Ghost Orb,</span>
-                <span class=ghost-writing>Ghost Writing</span>
+                <span class=spirit-box>Spirit Box</span>
             </p>
         </div>
         <div class=card>
             <h2>Yurei</h2>
-            <p>A Yurei is a Ghost that has returned to the physical world, usually for the purpose of revenge or pure hatred.</p>
+            <p>A yurei is a ghost that has returned to the physical world, usually for the purpose of revenge or hatred.</p>
             <h3>Strength</h3>
-            <p>Yurei's have been known to have a stronger effect on peoples' sanity.</p>
+            <p>Yurei have been known to have a stronger effect on peoples' sanity.</p>
             <h3>Weakness</h3>
-            <p>Smudging the Yurei’s room will cause it to not wander around the location for a long time.</p>
+            <p>Smudging the yurei’s room will cause it to not wander around the location for a long time.</p>
             <h3>Evidence</h3>
             <p class=evidence>
-                <span class=ghost-orb>Ghost Orb,</span>
-                <span class=ghost-writing>Ghost Writing,</span>
-                <span class=freezing-temps>Freezing Temps</span>
+                <span class=dots-projector>DOTS Projector,</span>
+                <span class=freezing-temps>Freezing Temps,</span>
+                <span class=ghost-orb>Ghost Orb</span>
             </p>
         </div>
     </div>
